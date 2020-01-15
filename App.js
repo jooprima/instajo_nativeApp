@@ -7,14 +7,16 @@
  */
 
 import React, {Component} from 'react';
+import {View} from 'react-native';
 import Header from './Component/HeaderContent';
-import {View} from 'native-base';
+import AtasContent from './Component/AtasContent';
 
 export default class App extends Component {
   render() {
     return (
-      <View>
+      <View style={{flex: 1}}>
         <Header />
+        <AtasContent />
       </View>
     );
   }
