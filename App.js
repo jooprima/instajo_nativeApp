@@ -7,23 +7,26 @@
  */
 
 import React, {Component} from 'react';
-import {View} from 'react-native';
-import Header from './Component/HeaderContent';
-import AtasContent from './Component/AtasContent';
-import Contents from './Component/Contents';
-import FooterContent from './Component/FooterContent';
+import {
+  SafeAreaView,
+  StyleSheet,
+  ScrollView,
+  View,
+  Text,
+  StatusBar,
+} from 'react-native';
+import {Button, Content, Container} from 'native-base';
 
 export default class App extends Component {
   render() {
     return (
-      <View style={{flex: 1}}>
-        <Header />
-        <View style={{height: 100}}>
-          <AtasContent />
-        </View>
-        <Contents />
-        <FooterContent />
-      </View>
+      <Container>
+        <Content>
+          <Button Danger>
+            <Text>tes button</Text>
+          </Button>
+        </Content>
+      </Container>
     );
   }
 }
