@@ -11,16 +11,18 @@ import {View} from 'react-native';
 import Header from './Component/HeaderContent';
 import AtasContent from './Component/AtasContent';
 import Contents from './Component/Contents';
+import FooterContent from './Component/FooterContent';
 
 export default class App extends Component {
   render() {
     return (
       <View style={{flex: 1}}>
         <Header />
-        <View style={{height:100}}>
+        <View style={{height: 100}}>
           <AtasContent />
         </View>
         <Contents />
+        <FooterContent />
       </View>
     );
   }
